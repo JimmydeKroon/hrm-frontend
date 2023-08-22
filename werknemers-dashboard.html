@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84198aa556.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="style/dashboard.css">
+
+    <title>HRM Werknemers</title>
+</head>
+<body>
+    <div class="pageflow">
+        <div class="side-menubar">
+            <div class="main-logo"><img src="img/logo_placeholder.svg" alt="logo"></div>
+            
+            <ul class="sidemenu">
+                <li class="menuitem-active"><i class="fa-solid fa-house fa-fw"></i>Home</li>
+                <li><i class="fa-solid fa-credit-card fa-fw"></i>Loonstroken</li>
+                <li><i class="fa-solid fa-file fa-fw"></i>Documenten</li>
+                <li><i class="fa-solid fa-building fa-fw"></i>bedrijfsinformatie</li>
+            </ul>
+
+            <ul class="sidemenu-bottom">
+                <li><i class="fa-solid fa-gear fa-fw"></i>Instellingen</li>
+                <li><i class="fa-solid fa-right-from-bracket fa-fw"></i>Uitloggen</li>
+            </ul>
+        </div>
+
+        <div class="mobile-topbar">
+            <div class="main-logo"><img src="img/logo_placeholder.svg" alt="logo"></div>
+        </div>
+
+        <i class="fa-solid fa-bars fa-lg mobile-menubars"></i>
+
+        <div data-visible='false' class="mobile-burgermenu">
+            <div class="burgermenu-account">
+                <i class="fa-regular fa-user fa-xl"></i>
+                <h3>Patrick Raskeyn</h3>
+            </div>
+            <ul class="burgermenu-items">
+                <li><i class="fa-solid fa-house fa-fw"></i>Home</li>
+                <li><i class="fa-solid fa-credit-card fa-fw"></i>Loonstroken</li>
+                <li><i class="fa-solid fa-file fa-fw"></i>Documenten</li>
+                <li><i class="fa-solid fa-building fa-fw"></i>bedrijfsinformatie</li>
+            </ul>
+
+            <ul class="burgermenu-bottom">
+                <li><i class="fa-solid fa-gear fa-fw"></i>Instellingen</li>
+                <li><i class="fa-solid fa-right-from-bracket fa-fw"></i>Uitloggen</li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="top-menubar">
+                <div class="welcome-text">
+                    <h1>HRM Dashboard</h1>
+                    <h3>Welkom, Patrick!</h3>
+                </div>
+
+                <ul class="menubar">
+                    <li><i class="fa-regular fa-bell fa-xl"></i></li>
+                    <li><i class="fa-regular fa-envelope fa-xl"></i></li>
+                    <li>Patrick Raskeyn <i class="profile-arrow fa-solid fa-caret-down"></i></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div class="block b1">
+                    <h1>Zieken</h1>
+                    <p>Info hier</p>
+                </div>
+
+                <div class="block b2">
+                    <h1>Afspraken</h1>
+                    <p>Info hier</p>
+                </div>
+
+                <div class="block b3">
+                    <h1>Declaraties</h1>
+                    <p>Info hier</p>
+                </div>
+
+                <div class="block b4">
+                    <h1>Loonstroken</h1>
+                    <p>Info hier</p>
+                </div>
+            </div>
+
+            <div class="mobile-bottommenu">
+                <ul class="mobile-bottommenu_items">
+                    <li class="mobilemenu-active"><i class="fa-solid fa-house fa-fw fa-lg"></i><br><span>Home</span></li>
+                    <li class="mobilemenu-nonactive"><i class="fa-solid fa-credit-card fa-fw fa-lg"></i><br><span>Loonstroken</span></li>
+                    <li class="mobilemenu-nonactive"><i class="fa-solid fa-file fa-fw fa-lg"></i><br><span>Documenten</span></li>
+                    <li class="mobilemenu-nonactive"><i class="fa-solid fa-building fa-fw fa-lg"></i><br><span>bedrijfsinfo</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

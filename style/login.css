@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-logo {
+    margin: 3em 0 0 3em;
+    width: 12%;
+    height: auto;
+}
+
+.main .login-form {
+    margin: 10em 0 0 15vw;
+    max-width: fit-content;
+}
+
+.login-form h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.login-form h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color:rgb(134, 134, 134);
+    text-align: center;
+}
+
+.login-form > h3 {
+    margin-bottom: 3em;
+}
+
+form label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+form input#email,form input#passwordinput,form input#login {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5em;
+    padding-left: 1em;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 10em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+form input#login {
+    background-color: #000;
+    color: #e2e2e2;
+    margin-top: 2em;
+}
+
+.rememberPassword {
+    display: flex;
+    flex-direction: row;
+    font-size: .8em;
+    font-weight: 200;
+    color: rgb(134, 134, 134);
+}
+
+.passwordForgot {
+    margin: 0;
+}
+
+.passwordForgot a {
+    text-decoration: none;
+}
+
+.passwordinput-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-imgfill {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: translate(45vw);
+}
+
+.loginimg {
+    height: 80vh;
+    width: auto;
+    border-radius: 40px;
+}
+
+#eyeicon {
+    position: absolute;
+    right: -2em;
+    top: 1em;
+}
+
+/* --- responsive (mobile) stuff --- */
+
+@media only screen and (max-width: 1300px) {
+    .login-imgfill {
+        top: -60px;
+        position: relative;
+        -webkit-transform: none; /* Safari and Chrome */
+            -moz-transform: none; /* Firefox */
+                -ms-transform: none; /* IE 9 */
+                    -o-transform: none; /* Opera */
+                        transform: none;
+    }
+
+    .main {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loginimg {
+        width: 100vw;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        order: 1;
+    }
+
+    .main .login-form {
+        margin: 0 auto;
+
+        order: 2;
+    }
+
+    .login-form h2 {
+        font-size: 1.4em;
+    }
+
+    .login-form h3 {
+        font-size: 1.2em;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-logo {
+        order: 3;
+        width: 120px;
+        margin: 0 auto;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+}

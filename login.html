@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/84198aa556.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style/login.css">
+  <title>HRM login</title>
+</head>
+<body>
+
+    <div class="main-logo"><img src="img/logo_placeholder.svg" alt="logo"></div>
+
+    <div class="main">
+        
+        <div class="login-form">
+            <h2>Inloggen</h2>
+            <h3>Login voor het HRM dashboard</h3>
+
+            <form>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <label for="password">Wachtwoord</label>
+                <div class="passwordinput-wrapper">
+                    <input type="password" id="passwordinput" name="pword"><i id="eyeicon" class="fa-solid fa-eye-slash fa-lg"></i>
+                </div>
+                <div class="rememberPassword">
+                    <input type="checkbox" id="remember-password" name="remember" value="remember-password">
+                    <label for="remember-password" class="nowrap">Wachtwoord onthouden</label>
+                </div>
+                <input type="button" id="login" value="Login">
+                <p class="passwordForgot">Wachtwoord vergeten? <a href="#">herstel</a></p>
+            </form>
+        </div>
+
+        <div class="login-imgfill">
+            <img src="img/login-img.jpeg" class="loginimg" alt="Image of someone logging in on their computer">
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
