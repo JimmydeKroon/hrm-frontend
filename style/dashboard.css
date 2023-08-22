@@ -20,6 +20,15 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
 .main {
     width: 80%;
     max-width: 80%;
@@ -240,7 +249,7 @@ body {
         padding: 10% 0;
     }
 
-    .mobile-bottommenu_items li {
+    .mobile-bottommenu_items a {
         text-align: center;
         width: 20%;
     }
