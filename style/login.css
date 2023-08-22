@@ -57,6 +57,10 @@ form input#login {
     margin-top: 2em;
 }
 
+form a input {
+    cursor: pointer;
+}
+
 .rememberPassword {
     display: flex;
     flex-direction: row;
@@ -96,6 +100,7 @@ form input#login {
     position: absolute;
     right: -2em;
     top: 1em;
+    cursor: pointer;
 }
 
 /* --- responsive (mobile) stuff --- */
