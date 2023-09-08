@@ -241,7 +241,13 @@ a:visited {
 .dropdown-content_account li {
     font-size: 0.8;
     padding: 1em;
-    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-content_account li:hover {
+    opacity: 50%;
+    transform: scale(1.03);
 }
 
 .dropdown-show {
