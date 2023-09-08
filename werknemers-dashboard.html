@@ -17,9 +17,9 @@
             
             <ul class="sidemenu">
                 <a href="werknemers-dashboard.html"><li class="menuitem-active"><i class="fa-solid fa-house fa-fw"></i>Home</li></a>
-                <a href="werknemers-loonstroken.html"><li><i class="fa-solid fa-credit-card fa-fw"></i>Loonstroken</li></a>
-                <a href="werknemers-documenten.html"><li><i class="fa-solid fa-file fa-fw"></i>Documenten</li></a>
-                <a href="werknemers-bedrijfsinformatie.html"><li><i class="fa-solid fa-building fa-fw"></i>bedrijfsinformatie</li></a>
+                <a href="werknemers-documenten.html"><li><i class="fa-solid fa-file fa-fw"></i>documenten</li></a>
+                <a href="werknemers-personeelshandboek.html"><li><i class="fa-solid fa-book fa-fw"></i>personeelshandboek</li></a>
+                <a href="werknemers-profiel.html"><li><i class="fa-solid fa-user fa-fw"></i>profiel</li></a>
             </ul>
 
             <ul class="sidemenu-bottom">
@@ -40,10 +40,10 @@
                 <h3>Patrick Raskeyn</h3>
             </div>
             <ul class="burgermenu-items">
-                <a href="werknemers-dashboard.html"><li><i class="fa-solid fa-house fa-fw"></i>Home</li></a>
-                <a href="werknemers-loonstroken.html"><li><i class="fa-solid fa-credit-card fa-fw"></i>Loonstroken</li></a>
-                <a href="werknemers-documenten.html"><li><i class="fa-solid fa-file fa-fw"></i>Documenten</li></a>
-                <a href="werknemers-bedrijfsinformatie.html"><li><i class="fa-solid fa-building fa-fw"></i>bedrijfsinformatie</li></a>
+                <a href="werknemers-dashboard.html"><li class="burgermenu-active"><i class="fa-solid fa-house fa-fw"></i>Home</li></a>
+                <a href="werknemers-documenten.html"><li><i class="fa-solid fa-file fa-fw"></i>documenten</li></a>
+                <a href="werknemers-personeelshandboek.html"><li><i class="fa-solid fa-book fa-fw"></i>personeelshandboek</li></a>
+                <a href="werknemers-profiel.html"><li><i class="fa-solid fa-user fa-fw"></i>profiel</li></a>
             </ul>
 
             <ul class="burgermenu-bottom">
@@ -61,40 +61,68 @@
                 </div>
 
                 <ul class="menubar">
-                    <li><i class="fa-regular fa-bell fa-xl"></i></li>
-                    <li><i class="fa-regular fa-envelope fa-xl"></i></li>
-                    <li>Patrick Raskeyn <i class="profile-arrow fa-solid fa-caret-down"></i></li>
+
+                    <div class="dropdown">
+                        <li><i class="dropdown-button fa-regular fa-bell fa-xl"></i></li>
+                        <div class="dropdown-content">
+                            <p>Je hebt geen nieuwe notificaties.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><i class="dropdown-button fa-regular fa-envelope fa-xl"></i></li>
+                        <div class="dropdown-content">
+                            <p>Je hebt geen nieuwe berichten.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <span><li class="dropdown-button">Patrick Raskeyn <i class="profile-arrow fa-solid fa-caret-down"></i></li></span>
+                        <div class="dropdown-content dropdown-content_account">
+                            <li><i class="fa-solid fa-gear fa-fw"></i>Instellingen</li>
+                            <li><i class="fa-solid fa-right-from-bracket fa-fw"></i>Uitloggen</li>
+                        </div>
+                    </div>
+                
                 </ul>
             </div>
 
             <div class="main-content">
                 <div class="block b1">
-                    <h1>Zieken</h1>
-                    <p>Info hier</p>
+                    <h1>recente loonstrook</h1>
+                    <p class="custom-salarisstrookblock"><i class="fa-solid fa-file-pdf"></i>voorbeeld salarisstrook-1772199.pdf</p>
                 </div>
 
                 <div class="block b2">
-                    <h1>Afspraken</h1>
-                    <p>Info hier</p>
+                    <h1>Binnenkort</h1>
+                    <p>Je volgende loonstrook komt in:</p>
+                    <h2 id="countdown-days"></h2>
+                    <span class="inline-counterblock">
+                        <h3 id="countdown-hours"></h3>
+                        <h3 id="countdown-minutes"></h3>
+                        <h3 id="countdown-seconds"></h3>
+                    </span>
                 </div>
 
                 <div class="block b3">
-                    <h1>Declaraties</h1>
-                    <p>Info hier</p>
+                    <h1>2FA</h1>
+                    <img src="img/2fa.svg" width="50%" height="auto" alt="illustration of 2 factor authentication">
+                    <p>Zet 2-factor authentication aan <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
 
                 <div class="block b4">
-                    <h1>Loonstroken</h1>
-                    <p>Info hier</p>
+                    <h1>Hulp nodig?</h1>
+                    <img src="img/help.svg" width="50%" height="auto" alt="illustration of customer support">
+                    <p>Neem direct contact op met HR <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
 
             <div class="mobile-bottommenu">
                 <ul class="mobile-bottommenu_items">
                     <a href="werknemers-dashboard.html"><li class="mobilemenu-active"><i class="fa-solid fa-house fa-fw fa-lg"></i><br><span>Home</span></li></a>
-                    <a href="werknemers-loonstroken.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-credit-card fa-fw fa-lg"></i><br><span>Loonstroken</span></li></a>
-                    <a href="werknemers-documenten.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-file fa-fw fa-lg"></i><br><span>Documenten</span></li></a>
-                    <a href="werknemers-bedrijfsinformatie.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-building fa-fw fa-lg"></i><br><span>bedrijfsinfo</span></li></a>
+                    <a href="werknemers-documenten.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-file fa-fw fa-lg"></i><br><span>documenten</span></li></a>
+                    <a href="werknemers-personeelshandboek.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-book fa-fw fa-lg"></i><br><span>personeelshandboek</span></li></a>
+                    <a href="werknemers-profiel.html"><li class="mobilemenu-nonactive"><i class="fa-solid fa-user fa-fw fa-lg"></i><br><span>bedrijfsinfo</span></li></a>
                 </ul>
             </div>
 
